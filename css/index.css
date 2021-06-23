@@ -151,21 +151,115 @@ svg {
   display: flex;
 }
 
-.flex-grid .col {
+.flex-grid .col-3 {
   flex: 1; 
   justify-content: space-between;
   width: 32%;
 }
 
-@media (max-width: 400px) {
-  flex-grid {
-    display: block;
-    .col {
-      width: 100%;
-      margin: 0 0 10px 0;
-    }
+.three-column-container {
+  box-sizing: border-box;
+  display: grid;
+  grid-gap: 7px;
+  clear: both;
+  padding: 30px;
+  font-size: 1.6em;
+  width: 100%;
   }
+
+.col {
+  background-color: rgba(173,167,133,0.5);
+  padding: 10px;
+  border: 1px solid black;
+  width: auto;
+  }
+    
+#col-1 {
+  grid-column: 2/4;
+  width: 32%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 0 0;
+  margin: 10px;
+  }
+    
+#helpinghand {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  }
+
+#col-2 {
+  grid-column: 6/8;
+  width: 32%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 0 0;
+  margin: 10px;
+  }
+
+#placeholder {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  }
+
+#col-3 {
+  grid-column: 10/12;
+  width: 32%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 0 0;
+  margin: 10px;
+  }
+
+#lovebugs {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  }
+
+/**
+@media (min-width: 768px) {
+  flex-grid .col-3 {
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 0 0 10px 0;
+      }
+    }
+
+* {
+  box-sizing: border-box;
 }
+body {
+  padding: 20px;
+}
+.flex-grid { 
+  margin: 0 0 20px 0;
+}
+.col {
+  background: purple;
+  padding: 20px;
+}*/
 
 footer {
   background-color: #2D1634;
